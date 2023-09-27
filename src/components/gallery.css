@@ -1,0 +1,30 @@
+.gallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery .images {
+    display: grid;
+    padding: 1em;
+    gap: 1em;
+    grid-template-rows: repeat(100, 20em);
+    
+}
+
+.gallery .images.one-column {
+    grid-template-columns: 1fr;
+}
+
+.gallery .images.two-column {
+    grid-template-columns: 1fr 1fr;
+}
+
+.gallery .images.three-column {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.gallery .bordered {
+    border: 2px solid gray;
+    border-radius: 1em;
+}
